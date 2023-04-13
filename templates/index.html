@@ -1,5 +1,5 @@
 {% extends 'layout.html' %} {% block body %}
-<!-- Cogido para el mensaje  -->
+
 {% with messages = get_flashed_messages() %} {% if messages %} {% for message in
 messages %}
 
@@ -15,7 +15,6 @@ messages %}
 
 {% endfor %} {% endif %} {% endwith %}
 
-<!-- Formulario -->
 <div class="bg-white p-8 my-8">
   <form action="/add_contact" method="post">
     <div class="mb-4">
