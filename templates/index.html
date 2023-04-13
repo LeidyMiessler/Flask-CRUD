@@ -1,0 +1,81 @@
+{% extends 'layout.html' %} {% block body %}
+<!-- Cogido para el mensaje  -->
+{% with messages = get_flashed_messages() %} {% if messages %} {% for message in
+messages %}
+
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <p>{{ message }}</p>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+
+{% endfor %} {% endif %} {% endwith %}
+
+<!-- Formulario -->
+<div class="bg-white p-8 my-8">
+  <form action="/add_contact" method="post">
+    <div class="mb-4">
+      <label for="fullname" class="form-label">Full Name:</label>
+      <input
+        type="text"
+        id="fullname"
+        name="fullname"
+        placeholder="Fullname"
+        class="form-control"
+      />
+    </div>
+    <div class="mb-4">
+      <label for="phone" class="form-label">Phone:</label>
+      <input
+        type="text"
+        id="phone"
+        name="phone"
+        placeholder="Phone"
+        class="form-control"
+      />
+    </div>
+    <div class="mb-4">
+      <label for="email" class="form-label">Email Address:</label>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="Email"
+        class="form-control"
+      />
+    </div>
+    <div class="d-flex justify-content-end">
+      <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+  </form>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="px-4 py-2">Fullname</th>
+      <th class="px-4 py-2">Phone</th>
+      <th class="px-4 py-2">Email</th>
+      <th class="px-4 py-2">Operations</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for contact in contacts%}
+    <tr>
+      <td class="border px-4 py-2">{{ contact.1 }}</td>
+      <td class="border px-4 py-2">{{ contact.2 }}</td>
+      <td class="border px-4 py-2">{{ contact.3 }}</td>
+      <td class="border px-4 py-2">
+        <a href="/edit/{{ contact.0 }}" class="btn btn-primary">Edit</a>
+        <a href="/delete/{{ contact.0 }}" class="btn btn-danger">Delete</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}
