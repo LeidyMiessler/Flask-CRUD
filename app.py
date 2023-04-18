@@ -52,7 +52,7 @@ def update_contact(id):
         mysql.connection.commit()
         flash('Contact update Successfully')
         return redirect(url_for('index'))
-
+        
 @app.route('/delete/<string:id>')
 def delete_contact(id):
     cur = mysql.connection.cursor()
