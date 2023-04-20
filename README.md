@@ -1,4 +1,4 @@
-# FLASK CRUD PROJECT
+# Flask CRUD Project
 
 This project is a web application that uses Flask to perform CRUD (create, read, update and delete) operations on a database.
 
