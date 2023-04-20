@@ -1,15 +1,19 @@
 # FLASK CRUD PROJECT
+
 This project is a web application that uses Flask to perform CRUD (create, read, update and delete) operations on a database.
 
 ## Prerequisites
+
 Before you can run this project, you must have Python 3, Flask installed.
 
 ## Installation instructions
+
 1. Clone this repository on your local machine.
 2. Open the terminal and navigate to the root directory of the project.
 3. Run pip install -r requirements.txt to install the required dependencies.
 
 ## Execution instructions
+
 To start the Flask server and run the application, follow these steps:
 
 1. Open the terminal and navigate to the root directory of the project.
@@ -17,6 +21,7 @@ To start the Flask server and run the application, follow these steps:
 3. Run the flask run command to start the Flask server.
 
 ## Functionalities
+
 This web application offers the following functionalities:
 
 Create a new record in the database
@@ -25,6 +30,7 @@ Update an existing record in the database
 Delete an existing record from the database
 
 ## Contribution
+
 If you wish to contribute to this project, please follow these steps:
 
 1. Make a fork of this repository.
@@ -33,4 +39,5 @@ If you wish to contribute to this project, please follow these steps:
 4. Wait for someone from the development team to review and approve your changes.
 
 ## Examples of use
+
 To use this application, simply access the URL http://localhost:3000 in your web browser and follow the on-screen instructions.
