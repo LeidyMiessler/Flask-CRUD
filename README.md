@@ -1,4 +1,4 @@
-# FLASK CRUD PROJECT
+# Flask CRUD Project
 
 This project is a web application that uses Flask to perform CRUD (create, read, update and delete) operations on a database.
 
@@ -38,6 +38,6 @@ If you wish to contribute to this project, please follow these steps:
 3. Make your changes and make a pull request to the main branch.
 4. Wait for someone from the development team to review and approve your changes.
 
-## Examples of use
+## How to use the application
 
 To use this application, simply access the URL http://localhost:3000 in your web browser and follow the on-screen instructions.
